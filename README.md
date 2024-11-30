@@ -1,7 +1,9 @@
 # MyNumber Generator (rewritten in Rust)
 
 参照元: <https://github.com/yayoimizuha/mynumber_generator>
+
 Ryzen ユーザーのため、CPU 並列処理を行うポート実装です。
+
 出力は zstd で圧縮されます。
 
 ## 使い方
