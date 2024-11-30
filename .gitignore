@@ -1,0 +1,4 @@
+/target
+*.zst
+*.txt
+.cargo

@@ -1,0 +1,19 @@
+[package]
+name = "mynumber_generator_riir"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.10"
+zstd = { version = "0.13", features = ["zstdmt", "experimental", "thin-lto"] }
+crossbeam = "0.8"
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+opt-level = 3
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winapi = { version = "0.3", features = ["winbase"] }
