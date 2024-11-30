@@ -25,9 +25,14 @@ cargo run --release -o output.txt.zst -s 1000000 -t 8 -q 1024
 ## パーフォマンス参考
 
 OS: Windows 11
+
 CPU: AMD Ryzen 9 9950X
+
 Storage: PCIE Gen4 x4 SSD
+
 メモリ: 64GB DDR5
+
+
 コンパイルオプション:
 
 - `target-cpu=native`
